@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="ninjagold justify-content-center">
+            <h1 class="text-center">Ninjagold</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="info">
+                    <p class="instruction">*Reach 250 Gold before you ran out of moves! Goodluck</p>
+                    <div class="moves">
+                        <p class="d-inline-block font-weight-bold">Moves: </p>
+                        <p class="d-inline-block" id="moves">20</p>
+                    </div>
+                    <div>
+                        <p class="d-inline-block font-weight-bold">Gold: </p>
+                        <p class="d-inline-block" id="gold">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div class="restart">
+                    <a href="index.html">
+                        <button id="button" class="restartbutton">Restart</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="stage col-md-4">
+                <div class="locations">
+                    <div class="top">
+                        <div id="house" class="house d-inline-block mh-5">
+                            <img src="house.png" alt="house" class="houseimg card-img-top">
+                            <div class="card-body">
+                                <button class="location">Enter House</button>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="mid">
+                        <div id="cave" class="cave d-inline-block mh-5">
+                            <img class="caveimg card-img-top" src="cave.png" alt="cave">
+                            <div class="card-body">
+                                <input class="location" type="button" value="Enter Cave">
+                            </div>
+                        </div>
+                        <div class="platform d-inline-block">
+                            <img id="ninja" class="ninja" src="ninja.png" alt="Ninja">
+                        </div>
+                        <div id="casino"  class="casino d-inline-block mh-5">
+                            <img src="casino.png" alt="casino" class="card-img-top casinoimg">
+                            <div class="card-body justify-content-center">
+                                <button class="location">Enter Casino</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="bot">
+                        <div id="goldmine" class="goldmine d-inline-block mh-5">
+                            <img src="goldmine.png" alt="goldmine" class="goldmineimg card-img-top">
+                            <div class="card-body buttongoldmine">
+                                <button class="location">Enter Goldmine</button>
+                            </div>
+                        </div>
+                    </div>                  
+                    
+                </div>
+                
+            </div>
+            <div class="log col-md-5">
+                <ul class="nav nav-pills">
+                    <li class="active"><a class="tabs" data-toggle="pill" href="#All">&nbsp;&nbsp;All&nbsp;</a></li>
+                    <li><a class="tabs" data-toggle="pill" href="#Losses">&nbsp;Losses&nbsp;</a></li>
+                    <li><a class="tabs" data-toggle="pill" href="#Gains">&nbsp;Gains&nbsp;&nbsp;</a></li>
+                </ul>
+                <div class="tab-content">
+                        <div id="All" class="tab-pane in active">
+                            <p class="headlog d-inline-block font-weight-bold"># of Tries / Location / Current Gold / Gain / Loss</p>
+                            <div class="logcontent">
+                                <ol class="all"></ol>
+                            </div>
+                        </div>
+                        <div id="Losses" class="tab-pane">
+                            <p class="headlog d-inline-block font-weight-bold"># of Tries / Location / Loss</p>
+                            <ol class="losses"></ol>
+                            <h3>Total losses:</h3>
+                            <p id="totallosses">0</p>
+                        </div>
+                        <div id="Gains" class="tab-pane">
+                            <p class="headlog d-inline-block font-weight-bold"># of Tries / Location / Gains</p>
+                            <ol class="gains"></ol>
+                            <h3>Total gains:</h3>
+                            <p id="totalgains">0</p>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+        </div>
+        
+
+    </div>
+    
+    
+</body>
+
+
+
+</html>

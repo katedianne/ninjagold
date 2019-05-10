@@ -1,0 +1,143 @@
+.container-fluid{
+    background-color: #39424b;
+}
+
+.ninja{
+    width: 100px;
+}
+
+.text-center{
+    color: white;
+}
+
+.headlog{
+    margin-top: 10px;
+    font-size: 20px !important;
+}
+
+.stage{
+    background-image: url("road.png");
+    background-size: cover;
+    width: 480px !important;
+    height: 480px;
+    border: 2px solid black;
+    margin: 0!important;
+}
+
+.col-md-8{
+    border-style: solid;
+    border-width: 3px 0px 3px 3px;
+    background-color: white;
+    border-radius: 15px 0px 0px 0px;
+}
+
+.col-md-1{
+    border-style: solid;
+    border-width: 3px 3px 3px 0px;
+    background-color: white;
+    border-radius: 0px 15px 0px 0px;
+}
+
+p{
+    margin-bottom: 0px !important;
+}
+
+.restartbutton{
+    background-color: red;
+    
+}
+.instruction{
+    font-size: 10px;
+}
+
+.ninja {
+    width: 80px;
+}
+
+.col-md-5{
+    border-radius: 0px 0px 15px 0px;
+}
+
+
+
+.cavecol{
+    padding-top: 50px !important;
+}
+
+.platform{
+    margin: 70px 0px 70px 50px;
+}
+
+.caveimg, .houseimg, .casinoimg{
+    width: 125px!important;
+   
+}
+
+.top{
+    padding: 0px 160px;
+}
+
+.bot{
+    padding: 0px 140px;
+}
+
+.mid{
+    display: flex;
+}
+
+
+.goldmineimg{
+    width: 100px !important;
+    margin-left: 20px;
+}
+
+.tabs{
+    font-size: 20px;
+}
+
+.tabs:hover{
+    text-decoration: none;
+    background-color: 
+}
+
+.nav{
+    margin: 10px;
+}
+
+.casino{
+    margin-top: 60px !important;
+    margin-left: 70px;
+
+}
+
+.cave{
+    margin-top: 70px;
+}
+
+.card{
+    width: 125px!important;
+    
+}
+
+.card-body{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: auto!important;
+    padding-right: auto!important;
+    justify-content: center !important;
+}
+
+ol{
+    font-size: 15px;
+}
+.location{
+    font-size: 12px;
+}
+
+.log{
+    background-color: #cfd8dc;
+    border-width: 1px 1px 1px 0px;
+    border-style:  solid;
+    border-color: #999999;
+
+}
